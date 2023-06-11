@@ -1,5 +1,5 @@
 let persona1 = {
-  id: "1",
+  id: 1,
   nombre: "edwin",
   apellido: "leyva",
   telefono: "15565468",
@@ -21,7 +21,7 @@ let persona2 = {
   },
 };
 let persona3 = {
-  id: "3",
+  id: 3,
   nombre: "mary",
   apellido: "leyva",
   telefono: "8576542",
@@ -32,7 +32,7 @@ let persona3 = {
   },
 };
 let persona4 = {
-  id: "4",
+  id: 4,
   nombre: "isaac",
   apellido: "leyva",
   telefono: "15565468",
@@ -89,6 +89,8 @@ function eliminarContacto(id) {
   }
 }
 
-eliminarContacto(2)
+eliminarContacto(4)
 console.log("eliminarcontacto");
 console.log(contacto);
+/*
+const modificarContacto= (id, keyvalue)=>*/
