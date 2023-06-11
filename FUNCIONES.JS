@@ -89,8 +89,22 @@ function eliminarContacto(id) {
   }
 }
 
-eliminarContacto(4)
+/*eliminarContacto(4)
 console.log("eliminarcontacto");
-console.log(contacto);
-/*
-const modificarContacto= (id, keyvalue)=>*/
+console.log(contacto);*/
+
+/*Se crea funcion modificar contact*/
+const modificarContacto = (id, llaveContacto, valorContacto) => {
+    for (let i = 0; i < contacto.length; i++) {
+        if (contacto[i].id === id) {
+            for (const [llave, valor] of Object.entries(contacto[i])) {
+                if (llave == llaveContacto && llave != "id") {
+                    contacto[i][llave] = valorContacto;
+                }
+            }
+        }
+    }
+    return contacto;
+}
+
+console.log(modificarContacto(5, "nombre", "paola"));
